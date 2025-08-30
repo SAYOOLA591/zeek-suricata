@@ -52,6 +52,38 @@ Add the following lines at the bottom
 #
 
 ### Install Suricata
+![suricata-img](https://github.com/user-attachments/assets/0101e713-d5fb-4297-854d-ae1dcc8ac450)
+
+### Configure Suricata
+
+Edit the YAML config:
+
+Community IDs are intended to provide a predictable flow ID for records that can be used to match them to the output of other tools, such as Zeek.
+
+![suricata-yaml](https://github.com/user-attachments/assets/7884ade3-5fdc-4f63-855d-e0b03786d23d)
+
+### Update Rules
+
+Enable additional rules:
+![update-rule1](https://github.com/user-attachments/assets/7e96f042-49e4-48dd-8abd-56c121a00be8)
+![update-rule2](https://github.com/user-attachments/assets/b7b59789-6574-44e8-a9b5-a0b7edc7dabd)
+
+### Start Suricata
+![suricata-start](https://github.com/user-attachments/assets/2c82c1cf-26fe-47c0-84fd-c075239b3620)
+
+### Validate config
+![validate-config](https://github.com/user-attachments/assets/12cf5229-d0c1-480f-81bc-e6060817e02b)
+
+#
+
+# Add Custom Sliver C2 Rules
+
+### Fetch custom rule: 
+![custom-rule1](https://github.com/user-attachments/assets/0e6bc590-fc3a-4119-ad0b-ba44ecd190bc)
+
+### Append it to rules and Verify rule addition:
+![apend-rule](https://github.com/user-attachments/assets/42b8bfc4-4716-4844-a806-6995052f661e)
+
 
 
 
