@@ -84,6 +84,9 @@ Enable additional rules:
 ### Append it to rules and Verify rule addition:
 ![apend-rule](https://github.com/user-attachments/assets/42b8bfc4-4716-4844-a806-6995052f661e)
 
+### Now both Zeek and Suricata are installed, configured, and ready for investigation
+
+---
 
 
 
