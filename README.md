@@ -28,3 +28,61 @@ Zeek, Suricata, Ubuntu 22.04
 
 # Zeek & Suricata Installation and Configuration Guide
 
+### Install Zeek:
+
+Add Zeek repository
+
+The Zeek installation has been completed, and its binaries are located as shown below. To customize Zeek, its uses this configuration file provided, we are going to install and enable the folowing:
+
+Installs Zeek (with JA3 & JA4 fingerprinting enabled)
+
+![zek-install1](https://github.com/user-attachments/assets/ba2d3c81-96f7-4960-87fd-b9bd0348b968)
+
+### Install zkg
+![zkg-install](https://github.com/user-attachments/assets/358d4f5e-cc78-4465-ae81-19f4859e76de)
+
+### Install JA3 & JA4
+![ja3-ja4](https://github.com/user-attachments/assets/0e6d58fa-9a31-4ed4-aa58-25291ca4b6ee)
+
+### Configure Zeek
+
+Add the following lines at the bottom
+![zeek-config1](https://github.com/user-attachments/assets/f166487b-23b0-441c-92f6-01ce032dcc01)
+
+#
+
+### Install Suricata
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
