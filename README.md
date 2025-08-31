@@ -109,8 +109,15 @@ I’m grabbing the Splunk Universal Forwarder .deb file. I'll show a roundabout 
 
 Change into the forwarder binary, switch to the splunkforwarder user, start it, and accept the license. I set the username to admin and a secure password. Exit the splunkforwarder user, and then change to the binary to enable boot-start.
 
+![splunkfwd-image](https://github.com/user-attachments/assets/c8fd5368-33ae-4145-b14f-173f36983c2a)
+
 ### Point this UF to the Splunk indexer
 
+![splunkfwd-active](https://github.com/user-attachments/assets/75e4dd73-481c-473b-82c8-20a01a359c71)
+
+We now see an active forwarding going to the Splunk server. Finally, this is how we configure Splunk on the Zeek server to point our data over to our Splunk server.
+
+---
 
 
 
