@@ -97,7 +97,19 @@ Enable additional rules:
 Apply the changes: `sudo netplan apply`
 ![zeek-static-ip2](https://github.com/user-attachments/assets/4d472dd4-d1ac-4183-af8b-737fab7891f3)
 
-### Setting Up Splunk Universal Forwarder:
+---
+
+# Zeek-Suricata + Splunk UF Setup
+
+I’m grabbing the Splunk Universal Forwarder .deb file. I'll show a roundabout way through a TinyURL to install the file on the server and rename it as a habit with Splunk.
+
+![splunk-deb](https://github.com/user-attachments/assets/9ec151a5-12de-4efa-9e24-b20882a45848)
+
+### Setting UP Splunk Universal Forwarder:
+
+Change into the forwarder binary, switch to the splunkforwarder user, start it, and accept the license. I set the username to admin and a secure password. Exit the splunkforwarder user, and then change to the binary to enable boot-start.
+
+### Point this UF to the Splunk indexer
 
 
 
