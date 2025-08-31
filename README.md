@@ -88,6 +88,17 @@ Enable additional rules:
 
 ---
 
+# Setting Static IP Address and Default Route:
+
+ - Configured a static IP address for the Zeek-Suricata server and defined a default route with the gateway 192.168.1.1. `sudo nano /etc/netplan/00-installer-config.yaml`
+
+![zeek-static-ip1](https://github.com/user-attachments/assets/786bbfb7-a020-4553-b18c-12302b9e0c87)
+
+Apply the changes: `sudo netplan apply`
+![zeek-static-ip2](https://github.com/user-attachments/assets/4d472dd4-d1ac-4183-af8b-737fab7891f3)
+
+### Setting Up Splunk Universal Forwarder:
+
 
 
 
