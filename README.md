@@ -127,6 +127,52 @@ Currently, if I type "ip a" and check the ens33, which is my network adapter, I 
 
 ![promisc-on](https://github.com/user-attachments/assets/2ae7dc94-6df8-42c9-ad7c-16809126e7f3)
 
+### Zeek Node Configuration For NIC
+
+Edit `node.cfg` to ensure the correct interface is properly configured, as it is set to eth0 and the host to local host by default. In our case, we need to modify the node to intercept traffic from ens33. After that, we can save and deploy Zeek to capture traffic on ens33.
+
+![zeek-node](https://github.com/user-attachments/assets/47e95fb2-cb0c-4d1e-ae8f-56779f9f9b24)
+![zeek-deploy](https://github.com/user-attachments/assets/a332ef56-11f1-4068-b05f-2a31d1aadf7b)
+
+### Suricata Interface Configuration For NIC
+
+Edit `suricata.yaml`. We are going to search for Eth0 and replace all found within the config file to ens33.
+
+![suricata-config1](https://github.com/user-attachments/assets/910555d1-fbd2-4196-96cd-03747e590dc3)
+![suricata-yaml2](https://github.com/user-attachments/assets/dc705102-330d-4b92-a2cb-ee6e3632a77a)
+
+---
+
+
+# Splunk Inputs Configuration
+
+Inside `/opt/splunk/etc/system/local/`, we don’t see an `inputs.conf` by default, only files like `outputs.conf`, `server.conf` that mean we are going to configure the `inputs.conf` to specify how our logs is going to be forward to the Splunk.
+
+![splunkfwd-inputs1](https://github.com/user-attachments/assets/c69b7de0-9af5-4656-b2a8-04d770548326)
+
+
+### Explanation:
+  - `host` sets the forwarder’s identity in Splunk
+  - The first monitor watches Zeek logs under `/opt/zeek/logs/current`
+  - The second monitor watches Suricata’s `eve.json`
+  - Both are routed via TCP to the Splunk indexer `(_TCP_ROUTING=*)`
+  - Events go into a custom index called `homelab-detect`
+
+### Zeek: Enable JSON Logging
+
+By default, Zeek logs are not parsed in JSON format. We must enable its policy that way our splunk server can then intrepret the logs in JSON format.
+
+![zeekjson-policy](https://github.com/user-attachments/assets/1f3b8eca-ac86-4586-8eea-10443861bac3)
+
+
+### Restart Splunk Forwarder
+
+Restart the Splunk Universal Forwarder so it picks up new configs
+
+
+
+
+
 
 
 
