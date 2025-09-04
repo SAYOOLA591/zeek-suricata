@@ -113,7 +113,7 @@ Change into the forwarder binary, switch to the splunkforwarder user, start it, 
 
 ### Point this UF to the Splunk indexer
 
-![splunkfwd-active](https://github.com/user-attachments/assets/75e4dd73-481c-473b-82c8-20a01a359c71)
+![splunkfwd-active](https://github.com/user-attachments/assets/c4b5381d-225e-4069-a960-fbcbd2b005c4)
 
 We now see an active forwarding going to the Splunk server. Finally, this is how we configure Splunk on the Zeek server to point our data over to our Splunk server.
 
