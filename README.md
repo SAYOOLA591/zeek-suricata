@@ -119,8 +119,13 @@ We now see an active forwarding going to the Splunk server. Finally, this is how
 
 ---
 
+# Promiscuous Mode on NIC
 
+We need to change the network adapter to promiscuous mode. Let me explain what promiscuous mode is and why it's important. When a Network Interface Card (NIC) is set to promiscuous mode, it allows all data frames to pass through, even those intended for other machines or network devices. This capability is essential for tools like Zeek and Suricata, which are used to monitor network traffic.
 
+Currently, if I type "ip a" and check the ens33, which is my network adapter, I can see that it has broadcast and multicast capabilities. However, we need to enable promiscuous mode.
+
+![promisc-on](https://github.com/user-attachments/assets/2ae7dc94-6df8-42c9-ad7c-16809126e7f3)
 
 
 
