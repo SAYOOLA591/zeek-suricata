@@ -6,25 +6,7 @@ As part of the setup, I will configure the server's static IP address to ensure 
 
 ---
 
-## Repository Structure
 
-- **[`docs/`](docs/)**  
-  Contains detailed setup guides and walkthroughs.  
-  - `ZEEK_SURICATA_SETUP.md` → full installation and configuration steps.
-
-- **[`configs/`](configs/)** *(recommended)*  
-  Example configuration files for quick reference.  
-  - `local.zeek.example` → base Zeek config with JSON logging enabled.  
-  - `suricata.yaml.example` → sample Suricata config with `community_id` enabled.  
-  - `inputs.conf.example` → Splunk Forwarder inputs for Zeek & Suricata logs.
-
-- **[`scripts/`](scripts/)**  
-  Automation and helper scripts.  
-  - `setup-zeek-suricata.ps1` → PowerShell automation for VM + forwarder setup.
-
-- **[`rules/`](rules/)**  
-  Custom IDS rules.  
-  - `sliver.snort` → Snort rules for detecting Sliver C2 traffic.
   
 ---
 
