@@ -1,21 +1,33 @@
 ## Introduction
 
-In this lab, I will demonstrate how to install and configure Zeek and Suricata on Ubuntu 22.04 server. These tools provide in-depth network traffic analysis and intrusion detection capabilities, which are essential for our defensive monitoring stack.
+In this lab, I will demonstrate how to install and configure Zeek and Suricata on a Ubuntu 22.04 server. These tools provide in-depth network traffic analysis and intrusion detection capabilities, which are essential for our defensive monitoring stack.
 
-As part of the setup, I will configure a static IP address for the server to ensure it is on the same network topology as the rest of the lab environment. Our pfSense firewall will also play a central role in managing and routing traffic. By combining pfSense with Zeek and Suricata, we significantly enhance our visibility, allowing us to capture, analyze, and detect suspicious activities more effectively.
+As part of the setup, I will configure the server's static IP address to ensure it is on the same network topology as the rest of the lab environment. I will also provide a step-by-step guide and supporting files to help build a SOC-focused lab environment. Forward Zeek & Suricata Logs into **Splunk** for correlation, hunting, and detection practice.
 
+---
 
+## Repository Structure
 
-### Purpose  
-Network Traffic Monitoring, IDS/IPS, Log Generation For SIEM)
-#
+- **[`docs/`](docs/)**  
+  Contains detailed setup guides and walkthroughs.  
+  - `ZEEK_SURICATA_SETUP.md` → full installation and configuration steps.
 
-# Tools
-Zeek, Suricata, Ubuntu 22.04
+- **[`configs/`](configs/)** *(recommended)*  
+  Example configuration files for quick reference.  
+  - `local.zeek.example` → base Zeek config with JSON logging enabled.  
+  - `suricata.yaml.example` → sample Suricata config with `community_id` enabled.  
+  - `inputs.conf.example` → Splunk Forwarder inputs for Zeek & Suricata logs.
 
-# Setup
- - Base VM setup (Ubuntu 22.04)
- - Network configuration (static IP, bridging/NAT)
+- **[`scripts/`](scripts/)**  
+  Automation and helper scripts.  
+  - `setup-zeek-suricata.ps1` → PowerShell automation for VM + forwarder setup.
+
+- **[`rules/`](rules/)**  
+  Custom IDS rules.  
+  - `sliver.snort` → Snort rules for detecting Sliver C2 traffic.
+  
+---
+
 
 # Features
  - Installs Zeek (with JA3 & JA4 fingerprinting enabled)
@@ -23,7 +35,8 @@ Zeek, Suricata, Ubuntu 22.04
  - Updates Suricata rules with ET/Open and Threat Hunting sources
  - Adds custom Sliver C2 rules for C2 detection
  - PowerShell script automates the whole process
-#
+
+---
 
 
 # Zeek & Suricata Installation and Configuration Guide
