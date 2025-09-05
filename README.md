@@ -148,7 +148,7 @@ Edit `suricata.yaml`. We are going to search for Eth0 and replace all found with
 
 Inside `/opt/splunk/etc/system/local/`, we don’t see an `inputs.conf` by default, only files like `outputs.conf`, `server.conf` that mean we are going to configure the `inputs.conf` to specify how our logs is going to be forward to the Splunk.
 
-![splunkfwd-inputs1](https://github.com/user-attachments/assets/c69b7de0-9af5-4656-b2a8-04d770548326)
+![splunkfwd-inputs1](https://github.com/user-attachments/assets/f26373e3-5f08-41b4-8b2b-b42cca035694)
 
 
 ### Explanation:
@@ -168,6 +168,12 @@ By default, Zeek logs are not parsed in JSON format. We must enable its policy t
 ### Restart Splunk Forwarder
 
 Restart the Splunk Universal Forwarder so it picks up new configs
+
+# Zeek-Suricata Log Query Overview
+
+I am super excited everything looks good! As we can see, our logs are ready to be queried in our SIEM platform.
+
+![zeek_suricata-logs](https://github.com/user-attachments/assets/75f94b08-67ef-4b4e-8623-cb5474ea51e2)
 
 
 
