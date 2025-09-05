@@ -77,6 +77,17 @@ Community IDs are intended to provide a predictable flow ID for records that can
 
 ### Update Rules
 
+### Why Enable Community Rulesets (ET/Open & Tgreen/Hunting)
+   ET/Open (Emerging Threats Open) :
+  - A widely-used community-driven rule set.
+  - Covers thousands of common attack patterns, malware traffic, and exploit attempts.
+  - Keeping the IDS current against known threats without cost.
+
+   Tgreen/Hunting:
+  - A rule set focused on threat hunting and anomaly detection.
+  - Provides experimental or behaviour-based rules, not always in standard IDS feeds.
+  - Useful for practicing detection of suspicious but not yet fully signatured activity.
+
 Enable additional rules:
 ![update-rule1](https://github.com/user-attachments/assets/7e96f042-49e4-48dd-8abd-56c121a00be8)
 ![update-rule2](https://github.com/user-attachments/assets/b7b59789-6574-44e8-a9b5-a0b7edc7dabd)
@@ -97,16 +108,6 @@ Enable additional rules:
   - Detecting Sliver traffic to spot real-world C2 patterns.
   - By adding custom rules for Sliver, we can understand the patterns of different APT intrusions and learn how to catch them.
 
-### Why Enable Community Rulesets (ET/Open & Tgreen/Hunting)
-   ET/Open (Emerging Threats Open) :
-  - A widely-used community-driven rule set.
-  - Covers thousands of common attack patterns, malware traffic, and exploit attempts.
-  - Keeping the IDS current against known threats without cost.
-
-   Tgreen/Hunting:
-  - A rule set focused on threat hunting and anomaly detection.
-  - Provides experimental or behaviour-based rules, not always in standard IDS feeds.
-  - Useful for practicing detection of suspicious but not yet fully signatured activity.
 
 ### Fetch custom rule: 
 ![custom-rule1](https://github.com/user-attachments/assets/0e6bc590-fc3a-4119-ad0b-ba44ecd190bc)
