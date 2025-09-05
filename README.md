@@ -169,6 +169,8 @@ By default, Zeek logs are not parsed in JSON format. We must enable its policy t
 
 Restart the Splunk Universal Forwarder so it picks up new configs
 
+---
+
 # Zeek-Suricata Log Query Overview
 
 I am super excited everything looks good! As we can see, our logs are ready to be queried in our SIEM platform.
