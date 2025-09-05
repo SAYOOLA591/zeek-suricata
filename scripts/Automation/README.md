@@ -11,3 +11,8 @@ Configures Splunk Forwarder (inputs.conf + outputs.conf)
 Restarts Splunk UF
 
 Creates index on Splunk indexer automatically
+
+
+### setup-lab.sh
+
+Linux shell for inside VM
