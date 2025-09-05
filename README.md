@@ -159,7 +159,7 @@ Edit `suricata.yaml`. We are going to search for Eth0 and replace all instances 
 
 # Splunk Inputs Configuration
 
-Inside `/opt/splunk/etc/system/local/`, we don’t see an `inputs.conf` by default, only files like `outputs.conf`, `server.conf` that mean we are going to configure the `inputs.conf` to specify how our logs is going to be forward to the Splunk.
+In the directory `/opt/splunk/etc/system/local/`, the `inputs.conf` file will be configured manually, unlike `outputs.conf` and `server.conf`, which are usually present. However, we will configure `inputs.conf` to specify how our logs will be forwarded to Splunk.
 
 ![splunkfwd-inputs1](https://github.com/user-attachments/assets/f26373e3-5f08-41b4-8b2b-b42cca035694)
 
