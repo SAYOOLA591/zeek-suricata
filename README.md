@@ -91,6 +91,23 @@ Enable additional rules:
 
 # Add Custom Sliver C2 Rules
 
+### Why Sliver C2 Matters
+  - Sliver C2 is a modern Command & Control (C2) framework used by red teams and threat actors.
+  - It provides attackers with post-exploitation capabilities (lateral movement, persistence, data exfiltration).
+  - Detecting Sliver traffic in your lab ensures you can spot real-world C2 patterns and test your SOC readiness.
+  - By adding custom rules for Sliver, you simulate APT-style intrusions and learn how to catch them.
+
+### Why Enable Community Rulesets (ET/Open & Tgreen/Hunting)
+   ET/Open (Emerging Threats Open) :
+  - A widely-used community-driven rule set.
+  - Covers thousands of common attack patterns, malware traffic, and exploit attempts.
+  - Keeps your IDS current against known threats without cost.
+
+   Tgreen/Hunting:
+  - A rule set focused on threat hunting and anomaly detection.
+  - Provides experimental or behaviour-based rules, not always in standard IDS feeds.
+  - Useful for practicing detection of suspicious but not yet fully signatured activity.
+
 ### Fetch custom rule: 
 ![custom-rule1](https://github.com/user-attachments/assets/0e6bc590-fc3a-4119-ad0b-ba44ecd190bc)
 
