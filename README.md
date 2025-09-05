@@ -149,10 +149,10 @@ Edit `node.cfg` to ensure the correct interface is properly configured, as it is
 
 ### Suricata Interface Configuration For NIC
 
-Edit `suricata.yaml`. We are going to search for Eth0 and replace all found within the config file to ens33.
+Edit `suricata.yaml`. We are going to search for Eth0 and replace all instances found within the config file with ens33.
 
-![suricata-config1](https://github.com/user-attachments/assets/910555d1-fbd2-4196-96cd-03747e590dc3)
-![suricata-yaml2](https://github.com/user-attachments/assets/dc705102-330d-4b92-a2cb-ee6e3632a77a)
+![suricata-config1](https://github.com/user-attachments/assets/dc705102-330d-4b92-a2cb-ee6e3632a77a)
+![suricata-yaml2](https://github.com/user-attachments/assets/910555d1-fbd2-4196-96cd-03747e590dc3)
 
 ---
 
@@ -173,20 +173,20 @@ Inside `/opt/splunk/etc/system/local/`, we don’t see an `inputs.conf` by defau
 
 ### Zeek: Enable JSON Logging
 
-By default, Zeek logs are not parsed in JSON format. We must enable its policy that way our splunk server can then intrepret the logs in JSON format.
+By default, Zeek logs are not parsed in JSON format. We must enable its policy so that our Splunk server can then interpret the logs in JSON format.
 
 ![zeekjson-policy](https://github.com/user-attachments/assets/1f3b8eca-ac86-4586-8eea-10443861bac3)
 
 
 ### Restart Splunk Forwarder
 
-Restart the Splunk Universal Forwarder so it picks up new configs
+Restart the Splunk Universal Forwarder so that it picks up the new configurations.
 
 ---
 
 # Zeek-Suricata Log Query Overview
 
-I am super excited everything looks good! As we can see, our logs are ready to be queried in our SIEM platform.
+I am super excited, everything looks good! As we can see, our logs are ready to be queried in our SIEM platform.
 
 ![zeek_suricata-logs](https://github.com/user-attachments/assets/75f94b08-67ef-4b4e-8623-cb5474ea51e2)
 
