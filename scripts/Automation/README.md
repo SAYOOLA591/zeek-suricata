@@ -1,6 +1,6 @@
 # PowerShell orchestration covers the full pipeline
 
-setup-lab.ps1
+### setup-lab.ps1
 
 Powershell involves 
 
