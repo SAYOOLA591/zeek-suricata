@@ -165,7 +165,7 @@ In the directory `/opt/splunk/etc/system/local/`, the `inputs.conf` file will be
 
 
 ### Explanation:
-  - `host` sets the forwarder’s identity in Splunk
+  - `host` sets to specify the Zeek-Suricata IP Address
   - The first monitor watches Zeek logs under `/opt/zeek/logs/current`
   - The second monitor watches Suricata’s `eve.json`
   - Both are routed via TCP to the Splunk indexer `(_TCP_ROUTING=*)`
