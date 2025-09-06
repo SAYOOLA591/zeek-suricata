@@ -195,6 +195,12 @@ I am super excited, everything looks good! As we can see, our logs are ready to 
 
 ![zeek_suricata-logs](https://github.com/user-attachments/assets/75f94b08-67ef-4b4e-8623-cb5474ea51e2)
 
+---
+
+## Conclusion
+
+We successfully demonstrated how to design, configure, and integrate multiple open-source security monitoring tools into a unified detection pipeline. By combining Zeek’s rich protocol analysis with Suricata’s signature-based detection and forwarding both to Splunk for centralised visibility, proper hands-on experience with the different kinds of tools, configurations, and troubleshooting steps that a SOC uses.
+
 
 
 
