@@ -199,7 +199,7 @@ I am super excited, everything looks good! As we can see, our logs are ready to 
 
 ## Conclusion
 
-We successfully demonstrated how to design, configure, and integrate multiple open-source security monitoring tools into a unified detection pipeline. By combining Zeek’s rich protocol analysis with Suricata’s signature-based detection and forwarding both to Splunk for centralised visibility, proper hands-on experience with the different kinds of tools, configurations, and troubleshooting steps that a SOC uses.
+We successfully demonstrated how to design, configure, and integrate multiple open-source security monitoring tools into a unified detection pipeline. By combining Zeek’s rich protocol analysis with Suricata’s signature-based detection and forwarding both to Splunk for centralised visibility, hands-on experience with the different kinds of tools, configurations, and troubleshooting steps that a SOC uses.
 
 
 
