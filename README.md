@@ -16,7 +16,6 @@ As part of the setup, I will configure the server's static IP address to ensure 
  - Installs Suricata (with community ID correlation enabled)
  - Updates Suricata rules with ET/Open and Threat Hunting sources
  - Adds custom Sliver C2 rules for C2 detection
- - PowerShell script automates the whole process
 
 ---
 
