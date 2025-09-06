@@ -37,6 +37,12 @@ Installs Zeek (with JA3 & JA4 fingerprinting enabled)
 ![zkg-install](https://github.com/user-attachments/assets/358d4f5e-cc78-4465-ae81-19f4859e76de)
 
 ### Install JA3 & JA4
+
+JA3  and JA4 fingerprints help you profile specific SSL/TLS clients across different destination IPs, Ports, and X509 certificates.
+
+JA4 fingerprint adds new functionality by sorting ClientHello extensions and reducing the total number of unique fingerprints for modern browsers.
+
+
 ![ja3-ja4](https://github.com/user-attachments/assets/0e6d58fa-9a31-4ed4-aa58-25291ca4b6ee)
 
 ### Configure Zeek
