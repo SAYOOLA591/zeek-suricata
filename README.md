@@ -4,12 +4,7 @@ In this lab, I will demonstrate how to install and configure Zeek and Suricata o
 
 As part of the setup, I will configure the server's static IP address to ensure it is on the same network topology as the rest of the lab environment. I will also provide a step-by-step guide and supporting files to help build a SOC-focused lab environment. Forward Zeek & Suricata Logs into **Splunk** for correlation, hunting, and detection practice.
 
----
-
-
-  
----
-
+#
 
 # Features
  - Installs Zeek (with JA3 & JA4 fingerprinting enabled)
