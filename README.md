@@ -37,7 +37,7 @@ Installs Zeek (with JA3 & JA4 fingerprinting enabled)
 
 ### Install JA3 & JA4
 
-JA3  and JA4 fingerprints help you profile specific SSL/TLS clients across different destination IPs, Ports, and X509 certificates.
+JA3  and JA4 fingerprints helps profile specific SSL/TLS clients across different destination IPs, Ports, and X509 certificates.
 
 JA4 fingerprint adds new functionality by sorting ClientHello extensions and reducing the total number of unique fingerprints for modern browsers.
 
@@ -199,7 +199,7 @@ I am super excited, everything looks good! As we can see, our logs are ready to 
 
 ## Conclusion
 
-We successfully demonstrated how to design, configure, and integrate multiple open-source security monitoring tools into a unified detection pipeline. By combining Zeek’s rich protocol analysis with Suricata’s signature-based detection and forwarding both to Splunk for centralised visibility, hands-on experience with the different kinds of tools, configurations, and troubleshooting steps that a SOC uses.
+We successfully demonstrated how to design, configure, and integrate multiple open-source security monitoring tools into a unified detection pipeline. By combining Zeek’s rich protocol analysis with Suricata’s signature-based detection and forwarding both to Splunk for centralised visibility, by extension, we have hands-on experience with the different kinds of tools, configurations, and troubleshooting steps that a SOC uses.
 
 
 
