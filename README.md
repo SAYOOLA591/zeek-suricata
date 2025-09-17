@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 This project demonstrates how to install, configure, and integrate Zeek and Suricata into a detection lab environment. Both tools provide powerful visibility into network traffic, and when combined with Splunk, help build robust detection and analysis capabilities.
 
