@@ -23,13 +23,13 @@ This project demonstrates how to install, configure, and integrate Zeek and Suri
 ---
 
 
-# Zeek & Suricata Installation and Configuration Guide
+# Zeek & Suricata Installation and Configuration
 
 ### Install Zeek:
 
 Add Zeek repository
 
-The Zeek installation has been completed, and its binaries are located as shown below. To customize Zeek, its uses this configuration file provided, we are going to install and enable the folowing:
+The Zeek installation has been completed, and its binaries are located as shown below. To customize Zeek, it uses the configuration file provided. We are going to install and enable the following:
 
 Installs Zeek (with JA3 & JA4 fingerprinting enabled)
 
