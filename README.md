@@ -1,16 +1,24 @@
 ## Introduction
 
-In this lab, I will demonstrate how to install and configure Zeek and Suricata on a Ubuntu 22.04 server. These tools provide in-depth network traffic analysis and intrusion detection capabilities, which are essential for our defensive monitoring stack.
-
-As part of the setup, I will configure the server's static IP address to ensure it is on the same network topology as the rest of the lab environment. I will also provide a step-by-step guide and supporting files to help build a SOC-focused lab environment. Forward Zeek & Suricata Logs into **Splunk** for correlation, hunting, and detection practice.
+This project demonstrates how to install, configure, and integrate Zeek and Suricata into a detection lab environment. Both tools provide powerful visibility into network traffic, and when combined with Splunk, help build robust detection and analysis capabilities.
 
 #
 
-# Features
- - Installs Zeek (with JA3 & JA4 fingerprinting enabled)
- - Installs Suricata (with community ID correlation enabled)
- - Updates Suricata rules with ET/Open and Threat Hunting sources
- - Adds custom Sliver C2 rules for C2 detection
+# Prerequisites
+ - Ubuntu 22.04 LTS (Server recommended)
+ - A dedicated network interface for packet capture ``(e.g., ens33)``
+ - Root/sudo access
+
+
+
+
+#
+
+# Detection Use Cases
+ - JA3/JA4 fingerprinting for TLS traffic
+ - Community Suricata rules ``(via suricata-update)``
+ - Sliver C2 detection rules
+ - Custom rule testing with an attacker machine
 
 ---
 
